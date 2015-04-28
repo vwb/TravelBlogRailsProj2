@@ -6,6 +6,7 @@ gem 'devise'
 gem 'foundation-rails'
 group :development do
   gem "better_errors"
+  gem 'binding_of_caller'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

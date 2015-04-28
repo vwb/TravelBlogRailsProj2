@@ -27,6 +27,32 @@
   margin-bottom: 20px;
 }
 
+//overrides for certain paragraph elements
+
+.poster{
+  font-size: small;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#buttondestroy{
+  position: absolute;
+  transition: .5s ease;
+  top: 2%;
+  left: 88%;
+  background-color: #ff3333;
+  border-radius: 10px;
+}
+
+.country{
+  color: grey;
+  border: 1px dashed light grey;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  font-size: small;
+}
+
 //override for the viewing of posts
 .in-page-post{
   border: 2px solid grey;
