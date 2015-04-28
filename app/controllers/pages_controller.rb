@@ -4,7 +4,6 @@ class PagesController < ApplicationController
   end
 
   def home
-  	@users = User.all
   	@posts = Post.all
   end
 

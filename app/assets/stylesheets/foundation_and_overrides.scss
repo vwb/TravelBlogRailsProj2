@@ -24,7 +24,16 @@
   border-left-style: none;
   border-right-style: none;
   width: 500px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+}
+
+//override for the viewing of posts
+.in-page-post{
+  border: 2px solid grey;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  margin-bottom: 15px;
 }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY

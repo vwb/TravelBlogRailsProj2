@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   
   get "about", to: "pages#about"
   get "posts/newpost", to: "posts#new"
+  get "comments/new", to: "comments#new"
 
   post "posts", to: "posts#create"
+  post "comments", to: "comments#create"
 
   resources :posts, :users, :blogs
 end

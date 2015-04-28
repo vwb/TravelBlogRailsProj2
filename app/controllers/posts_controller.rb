@@ -5,6 +5,10 @@ class PostsController < ApplicationController
 	  @post = Post.new
   end
 
+  def show
+    @post = Post.find(params[:id])
+  end
+
   def create
 	  @post = Post.create(post_params)
 	  if @post.save
@@ -12,6 +16,15 @@ class PostsController < ApplicationController
 	  else
 	   render 'new'
 	  end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to root_path
+    else
+      :back
+    end
   end
 
   private

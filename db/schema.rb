@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150427221456) do
+ActiveRecord::Schema.define(version: 20150428052035) do
 
   create_table "blogs", force: true do |t|
     t.integer  "user_id"
@@ -28,12 +28,12 @@ ActiveRecord::Schema.define(version: 20150427221456) do
 
   create_table "posts", force: true do |t|
     t.integer  "blog_id"
-    t.string   "country"
     t.datetime "date"
     t.string   "title"
     t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "location"
   end
 
   create_table "users", force: true do |t|

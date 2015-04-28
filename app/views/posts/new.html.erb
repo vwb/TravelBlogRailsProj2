@@ -1,7 +1,7 @@
 <%= simple_form_for @post do |f| %>
-    <%= f.input :title, placeholder: "Post Title", input_html: {size:40} %>
+    <%= f.input :title, placeholder: "Post Title" %>
     <%= f.input :text, placeholder: "Your Post Here" %>
-    <%#= f.input :country, placeholder: "What country are you in?" %>
+    <%= f.input :location, placeholder: "What country are you in?" %>
     <%= f.button :submit %>
 <% end %>
 

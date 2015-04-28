@@ -1,0 +1,24 @@
+<h3> <%= @post.title %> </h3>
+
+
+
+<div class = "in-page-post">	
+	<p> <%= @post.text %> </p>
+	<p> <%= @post.location %> </p>
+</div>
+
+
+<%= button_to "Post Comment", comments_new_path, :class => "button small", :method => :get %>
+
+<h4>Comments</h4>
+
+<% if current_user == @post.user %>
+  <%= button_to "Delete Post", post_path(@post), :class => "button tiny", :method => :delete %>
+<% end %>
+
+
+
+
+
+
+

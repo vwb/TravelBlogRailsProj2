@@ -1,0 +1,4 @@
+<%= simple_form_for @comment do |g| %>
+	<%= g.input :content, label: "Comment", as: :text, placeholder: "Your comment here..." %>
+	<%= g.button :submit %>
+<% end %>
