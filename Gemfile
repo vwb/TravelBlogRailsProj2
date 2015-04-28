@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'capybara'
 gem 'simple_form'
 gem 'devise'
+gem 'foundation-rails'
 group :development do
   gem "better_errors"
 end
