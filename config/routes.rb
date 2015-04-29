@@ -9,8 +9,12 @@ Rails.application.routes.draw do
   post "posts", to: "posts#create"
 
   post "comments", to: "comments#create"
-  
+
   get "comments/new", to: "comments#new"
+
+  patch "like_post", to: "posts#like_post"
+
+  patch "like_comment", to: "comments#like_comment"
 
   #resources :posts do
   	#resources :comments

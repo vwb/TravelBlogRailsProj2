@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   def create
 	  @post = Post.create(post_params)
     @post.user = current_user
+    @post.like = 0;
 	  if @post.save
 	    redirect_to root_path
 	  else
@@ -27,6 +28,15 @@ class PostsController < ApplicationController
       :back
     end
   end
+
+  def like_post
+    @post = Post.find(params[:id])
+    @post.like += 1
+    if @post.save
+      redirect_to post_path(params[:id])
+    end
+  end
+
 
   private
 

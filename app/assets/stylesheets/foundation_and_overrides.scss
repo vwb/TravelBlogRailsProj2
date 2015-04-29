@@ -10,6 +10,28 @@
   color: white;
   padding: 0 15px; }
 
+.button{
+  border-radius: 5px;
+}
+
+.botton .small{
+  border-radius: 5px;
+}
+
+.botton .tiny{
+  border-radius: 5px;
+}
+
+.button-small{
+  border-radius: 5px;
+}
+
+#likePostB{
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
 //override for new post
 .form .button-to{
   color: white;
@@ -24,26 +46,118 @@
   border-left-style: none;
   border-right-style: none;
   width: 500px;
-  margin-bottom: 20px;
+}
+
+#postL{
+  text-align:right;
+  right: 40px;
+  margin-bottom: 0px;
+  display: inline-block;
 }
 
 //overrides for certain paragraph elements
-
 .poster{
   font-size: small;
   margin-bottom: 10px;
   margin-top: 5px;
 }
 
+#postlikearea{
+  display: inline-block;
+}
+
+//OVERRIDES AND FIXES FOR COMMENT ELEMENTS
+
+#comment2{
+  background-color: #e4e4e4;
+  width: 350px;
+  border: 1px solid transparent;
+  overflow:hidden;
+  margin-bottom: -22px;
+}
+
+#comment1{
+  border: 1px solid transparent;
+  background-color: #d4e7e8;
+  width: 350px;
+  overflow:hidden;
+  margin-bottom: -22px;
+}
+
+#commentheader{
+  color: grey;
+  font-size: small;
+  position:relative;
+  top:5px;
+  left: 10px;
+}
+
+#topcomm{
+  display:inline-block;
+}
+
+#postComment{
+  display:inline-block;
+  margin-left: 88px;
+  margin-bottom: 15px;
+}
+
+#commentbody1{
+  position:relative;
+  left:15px;
+  background-color: #bed9db;
+  padding-left:6px;
+  margin-top: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 20px;
+  font-size: 90%;
+}
+
+#commentbody2{
+  position:relative;
+  left:15px;
+  background-color: #d7d7d7;
+  padding-left:6px;
+  margin-top: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 20px;
+  font-size: 90%;
+}
+
+//override of the comment like button
+#commentLike{
+  position:relative;
+  left:15px;
+  height: 20px;
+  line-height: 0px;
+  border-radius:5px;
+  bottom: 10px;
+  margin: 0px;
+}
+
+#commentliketotal{
+  font-size: small;
+  margin: 0px;
+  position: relative;
+  text-align:left;
+  bottom: 32px;
+  left: 300px;
+  width: 100px;
+}
+
+//override for the destroy post button
 #buttondestroy{
   position: absolute;
   transition: .5s ease;
-  top: 2%;
+  top: 1.5%;
   left: 88%;
   background-color: #ff3333;
   border-radius: 10px;
 }
 
+//Background information for post/show
 .country{
   color: grey;
   border: 1px dashed light grey;
@@ -60,7 +174,9 @@
   border-left-style: none;
   border-right-style: none;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
+
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
