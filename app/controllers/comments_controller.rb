@@ -17,12 +17,22 @@ class CommentsController < ApplicationController
 
     def like_comment
   		@comment = Comment.find(params[:id])
+  		#current_user.comments_liked << @comment.id
   		@comment.like += 1
   		if @comment.save
   			redirect_to post_path(@comment.post)
   		end
   	end
-
+=begin
+  	def unlike_comment
+  		@comment = Comment.find(params[:id])
+  		@comment.like -= 1
+  		current_user.comments_liked.delete(@comment.id)
+  		if @comment.save
+  			redirect_to post_path(@comment.post)
+  		end
+  	end
+=end
     private
 
     def comment_params

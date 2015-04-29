@@ -2,7 +2,7 @@
 	<div id = "comment1">
 		<h6 id = "commentheader"> <%=comment.user.email%>:</h6>
 			<p id = "commentbody1"> <%= comment.content %></p>
-			<%= button_to "Like!", like_comment_path(id: comment), :class => "button tiny", :id => "commentLike", :method => :patch %>
+				<%= button_to "Like!", like_comment_path(id: comment), :class => "button tiny", :id => "commentLike", :method => :patch %>
 			<p id = "commentliketotal"> <%= comment.like %> likes </p>
 	</div>
 <% else %>
@@ -11,8 +11,7 @@
 			<p id = "commentbody2"> 
 				<%= comment.content %>
 			</p>
-			<%= button_to "Like!", like_comment_path(id: comment), :class => "button tiny", :id => "commentLike", 
-					:method => :patch %>
+				<%= button_to "Like!", like_comment_path(id: comment), :class => "button tiny", :id => "commentLike", :method => :patch %>
 			<p id = "commentliketotal">	
 				<%= comment.like %> likes
 			 </p>
