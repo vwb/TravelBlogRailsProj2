@@ -10,7 +10,7 @@
     <div id = "postlikearea">
     <%= button_to "Like!", like_post_path(id: @post), :class => "button small", :method => :patch, :id => "likePostB" %>
     </div>
-    <p id = "postL"> Likes: <%= @post.like %>
+    <p id = "postL"> <%= @post.like %> likes </p>
 </div>
 
 <span>

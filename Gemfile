@@ -4,6 +4,7 @@ gem 'capybara'
 gem 'simple_form'
 gem 'devise'
 gem 'foundation-rails'
+gem 'country_select', github: 'stefanpenner/country_select'
 group :development do
   gem "better_errors"
   gem 'binding_of_caller'
