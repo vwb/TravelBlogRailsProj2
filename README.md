@@ -4,7 +4,7 @@ Title TravelBlog
 
 Team Members: Vincent Budrovich, Gina Hwang
 
-DemoLink: railstravelblog.com (this can be changed)s
+DemoLink: http://afternoon-chamber-1232.herokuapp.com/
 
 ###Idea 
 
