@@ -33,7 +33,7 @@ Vincent
   - made views, controllers, comments, posts
 
 Gina
-  - made users, admin
+  - made users, admin, heroku fun
 
 
 
